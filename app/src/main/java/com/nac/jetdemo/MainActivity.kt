@@ -6,11 +6,8 @@ import androidx.activity.compose.setContent
 import androidx.activity.viewModels
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.mutableStateListOf
-import androidx.compose.runtime.remember
-import com.nac.jetdemo.local.Jet
-import com.nac.jetdemo.main.MainPage
-import com.nac.jetdemo.main.MainViewModel
+import com.nac.module_main.MainPage
+import com.nac.module_main.MainViewModel
 import com.nac.jetdemo.ui.theme.JetDemoTheme
 import dagger.hilt.android.AndroidEntryPoint
 
