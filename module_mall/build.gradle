@@ -31,18 +31,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        compose true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion compose_version
-        kotlinCompilerVersion kotlin_version
-    }
 }
 
 dependencies {
     implementation project(path: ':lib_base')
-    implementation project(path: ':lib_net')
     implementation project(path: ':module_common')
 
     api project(path: ':export_mall')

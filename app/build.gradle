@@ -55,6 +55,7 @@ dependencies {
 
     implementation project(path: ':module_common')
     implementation project(path: ':module_main')
+    implementation project(path: ':module_mall')
 
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"

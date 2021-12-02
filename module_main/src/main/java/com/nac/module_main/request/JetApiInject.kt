@@ -1,4 +1,4 @@
-package com.nac.module_common.net
+package com.nac.module_main.request
 
 import com.nac.lib_net.NetManager
 import dagger.Module
@@ -9,9 +9,9 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class NetModule {
+class JetApiInject {
 
     @Singleton
     @Provides
-    fun provideNetService(): JetService = NetManager.create()
+    fun provideNetService(): JetApi = NetManager.create()
 }

@@ -1,19 +1,19 @@
 package com.nac.module_main
 
-import com.nac.module_common.db.entity.Jet
 import com.nac.module_common.db.dao.JetDao
-import com.nac.module_common.net.JetService
+import com.nac.module_common.db.entity.Jet
+import com.nac.module_main.request.JetApi
 import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.random.Random
 
 @Singleton
 class MainRepository @Inject constructor(
-    private val service: JetService,
+    private val api: JetApi,
     private val local: JetDao
 ) {
     suspend fun getData(): Any {
-        return service.getData()
+        return api.getData()
     }
 
     suspend fun saveLocal(data: String) = local.addJetData(
