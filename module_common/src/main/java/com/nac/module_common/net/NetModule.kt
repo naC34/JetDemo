@@ -1,6 +1,6 @@
 package com.nac.module_common.net
 
-import com.nac.lib_net.NetHelper
+import com.nac.lib_net.NetManager
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -13,5 +13,5 @@ class NetModule {
 
     @Singleton
     @Provides
-    fun provideNetService(): JetService = NetHelper.create()
+    fun provideNetService(): JetService = NetManager.create()
 }
